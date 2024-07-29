@@ -7,6 +7,7 @@ module.exports = {
   body: p => {
     const standard = `
       (module "Tenting Puck" (layer F.Cu) (tedit 5F09F7E8)
+      ${p.at /* parametric position */}
       
       (fp_circle (center 0 0) (end 20.55 0) (layer B.CrtYd) (width 0.55))
       (fp_line (start -1.6 19.05) (end -1.6 -19.05) (layer F.CrtYd) (width 0.2))
@@ -126,7 +127,7 @@ module.exports = {
         (xy 1.584498 14.118044)) (layer B.SilkS) (width 0.01))
 
       (pad 1 thru_hole circle (at 0 -19.05) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))
-      (pad 1 thru_hole circle (at 19.05 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))
+      
       (pad 1 thru_hole circle (at 0 19.05) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))
       (pad 1 thru_hole circle (at -19.05 0) (size 4.4 4.4) (drill 2.2) (layers *.Cu *.Mask))
     )

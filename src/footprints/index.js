@@ -24,4 +24,6 @@ module.exports = {
     slider: require('./slider'),
     trrs: require('./trrs'),
     via: require('./via'),
+    logos: require('./logos'),
+    signature: require('./signature'),
 }
